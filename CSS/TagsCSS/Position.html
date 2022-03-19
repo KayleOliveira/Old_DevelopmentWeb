@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Position</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			font-size: 20px;
+		}
+		.static{
+			position: static;
+		}
+		.relative{
+			position: relative;
+			/*top: 15px;*/
+			left: -20px;
+		}
+		.fixed{
+			position: fixed;
+			right: 20px;
+			bottom: 20px;
+		}
+		.absolute{
+			position: absolute;
+			left: 20px;
+		}
+		.sticky{
+			position: sticky;
+			top: 0;
+		}
+		.retangulo{
+			width: 200px;
+			height: 500px;
+			margin-top: 10px;
+			overflow: auto;
+		}
+		.square{
+			width: 100px;
+			height: 100px;
+			display: inline-block;
+		}
+		.bg-red{
+			color: white;
+			background-color: red;
+		}
+		.bg-blue{
+			color: white;
+			background-color: blue;
+		}
+		.bg-green{
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<!--<div class="static quadrado bg-blue"></div>
+	<div class="absolute quadrado bg-red"></div>-->
+
+	<div class="retangulo bg-blue">
+		<div class="square bg-red"></div>
+		<div class="square bg-green sticky"></div>
+		<div class="square bg-red"></div>
+		<div class="square bg-red"></div>
+		<div class="square bg-red"></div>
+		<div class="square bg-red"></div>
+		<div class="square bg-red"></div>
+		<div class="square bg-red"></div>
+		<div class="square bg-red"></div>
+		<div class="square bg-red"></div>
+
+	</div>
+</body>
+</html>

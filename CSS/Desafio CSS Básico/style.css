@@ -1,0 +1,29 @@
+body{
+	background-image: url(./assets/background.png);
+	background-repeat: no-repeat;
+}
+h1{
+	margin-left: 35px;
+	font-size: 45px;
+}
+ul{
+	margin-left: 35px;
+	width: 150px;
+	height: 300px;
+}
+li{
+	font-variant: small-caps;
+	font-size: 30px;
+	width: 30px;
+	padding-top: 20px;
+}
+#li1{
+	list-style-image: url(./assets/Insta.png);
+	list-style;
+}
+#li2{
+	list-style-image: url(./assets/Twitter.png);
+}
+#li3{
+	list-style-image: url(./assets/Youtube.png);
+}

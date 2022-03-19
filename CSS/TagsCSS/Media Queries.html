@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T Media Queries</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		.header{
+			overflow: hidden;
+			margin: auto;
+			width: 80%;
+			background-color: #5c57a4;
+			padding: 15px;
+			font-size: 18px;
+		}
+		.menu{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			float: right;
+		}
+		li{
+			float: left;
+			color: white;
+			margin-left: 15px; 
+		}
+		.logo{
+			float: left;
+			color: white;
+		}
+		@media screen and (max-width: 400px;){
+			.logo{
+				float: none;
+				text-align: center;
+			}
+			.menu{
+				margin-top: 20px;
+				float: none;
+				text-align: center;
+			}
+			li{
+				
+				padding: 10px; 
+				margin-top: 5px;
+				float: none;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			LOGO
+		</div>
+		<ul class="menu">
+			<li>HOME</li>
+			<li>CURSOS</li>
+			<li>CONTATO</li>
+		</ul>
+	</div>
+</body>
+</html>

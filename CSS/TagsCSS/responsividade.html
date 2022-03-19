@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsividade</title>
+	<meta name="viewport" content="width=device-width, inicial-scale=1.0">
+	<style type="text/css">
+		body{
+			font-size: 16px; 
+		}
+
+		.header{
+			position: relative;
+			width: 80%;
+			height: 100px;
+			background-color: grey;
+		}
+		.content{
+			position: absolute;
+			background-color: blue;
+			width: 70%;
+			height: 70%;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: white;
+			text-align: center;
+			font-size: 6vw;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="content">
+			Hello World
+		</div>
+	</div>
+</body>
+<!--
+para centralizar coloque
+position: relative no elemento pai
+position: absolute no content
+defina top:50% e left:50% no content
+tranform: translate(-50%, -50%) no content
+-->
+</html>

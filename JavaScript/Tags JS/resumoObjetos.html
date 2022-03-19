@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juntando Tudo</title>
+</head>
+<body>
+    <script>
+        //RESUMÃO OBJETOS
+
+        //PODER COLOCAR UM OBJETO DENTRO DE UMA VARIÁVEL
+        var a = {
+            nome: "Kayle",
+            sobrenome: "Oliveira"
+        }
+        console.log(a);
+
+        //PODER CRIAR UM OBJETO POR UMA FUNÇÃO
+        var a = objeto("Kayle", "Oliveira");
+
+        function objeto(n, s){
+            return {
+                nome: n,
+                sobrenome: s
+            }
+        }
+        console.log(a);
+
+        //PODER ...
+        var a = new objeto("Kayle", "Oliveira");
+
+        function objeto(n, s){
+            this.nome = n;
+            this.sobrenome = s;
+        }
+        console.log(a);
+    </script>
+</body>
+</html>

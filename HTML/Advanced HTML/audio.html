@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+
+    <style>
+        *{
+            margin: 0 auto;
+            font: bold 35px Arial;
+            text-align: center;
+            padding: 30px;
+        }
+
+        body{
+            background-color: rgb(99, 150, 245);
+        }
+        .container{
+            background-color: aliceblue;
+            border-radius: 15px;
+            width: 50%;
+        }
+    </style>
+</head>
+<body onload="carregar()"> <!-- Quando a página carregar, chama-rá a função carregar() -->
+
+    <div class="container">
+
+        <header>
+            <h1 class="titulo"></h1>
+        </header>
+
+        <audio controls>
+            <source id="musica" src="./Borgore Kiss My Lips.mp3" type="audio/mp3">
+        </audio>
+
+    </div>
+    
+    <script>
+        function carregar() {
+            let titulo = document.querySelector('.titulo')
+            titulo.innerHTML = `Reprodutor de Áudio`
+        }
+    </script>
+</body>
+</html>
